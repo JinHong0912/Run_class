@@ -15,15 +15,22 @@ public class Class_chap031 {
 //		System.out.printf("%d / %d = %d%n", a , b, a / b );
 //		System.out.printf("%d / %f = %f%n", a , (float) b, a / (float)b );
 		
+//		// 산술 연산자
+//		//예제 3-6 ch3/OperatorEx6
+//		byte a = 10;
+//		byte b = 20;
+//		//byte c = a + b;
+//		
+//		byte c = (byte) (a + b);
+//		System.out.println(c);
+//		
 		// 산술 연산자
-		//예제 3-6 ch3/OperatorEx6
+		//예제 3-7 ch3/OperatorEx7
 		byte a = 10;
-		byte b = 20;
-		//byte c = a + b;
+		byte b = 30;
 		
-		byte c = (byte) (a + b);
+		byte c = (byte) (a * b);
 		System.out.println(c);
-		
 		
 		
 		
