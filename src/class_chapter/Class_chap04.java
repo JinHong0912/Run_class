@@ -168,25 +168,25 @@ public class Class_chap04 {
 	
 	
 		//예제 4-8 ch4/FlowEx8
-		System.out.println("당신의 주민번호를 입력 하세요 . (011231-1111222)>");
-		
-		Scanner scanner = new Scanner(System.in);
-		String regNo = scanner.nextLine();
-		
-		char gender = regNo.charAt(7); // 입력받은 번호의 8번쨰 문자를 gender에 저장
-		
-		switch(gender) {
-		
-		case '1': case '3':
-			System.out.println("당신은 남자입니다.");
-			break;
-		case '2': case '4':
-			System.out.println("당신은 여자입니다.");
-			break;
-		default:
-			System.out.println("유효하지 않은 주민등록 번호 입니다.");
-		
-		}
+//		System.out.println("당신의 주민번호를 입력 하세요 . (011231-1111222)>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		String regNo = scanner.nextLine();
+//		
+//		char gender = regNo.charAt(7); // 입력받은 번호의 8번쨰 문자를 gender에 저장
+//		
+//		switch(gender) {
+//		
+//		case '1': case '3':
+//			System.out.println("당신은 남자입니다.");
+//			break;
+//		case '2': case '4':
+//			System.out.println("당신은 여자입니다.");
+//			break;
+//		default:
+//			System.out.println("유효하지 않은 주민등록 번호 입니다.");
+//		
+//		}
 		
 //		//예제 4-9 ch4/FlowEx9
 //		char grade = ' ';
