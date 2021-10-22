@@ -216,39 +216,164 @@ public class Class_chap04 {
 //	
 	
 		//switch 중첩 예제 4-10  ch4/FlowEx10
-		System.out.println("당신의 주민번호를 입력하세요 > .(011231-1111222) > ");
+//		4	
+//		switch(gender){
+//		case '1': case '3':
+//			switch(gender) {
+//			case '1':
+//				System.out.println("당신은 2000년 이전에 출생한 남자 입니다.");
+//				break;
+//			case '3':
+//				System.out.println("당신은 2000년 이후에 출생한 남자 입니다.");
+//				break;
+//			}
+//			break; // 뺴지 않도록 주의
+//		case '2': case '4':
+//			switch(gender) {
+//			case '2':
+//				System.out.println("당신은 2000년 이전에 출생한 여자 입니다.");
+//				break;
+//			case '4':
+//				System.out.println("당신은 2000년 이후에 출생한 여자 입니다.");
+//				break;
+//			}
+//			break;
+//		default:
+//			System.out.println("유효하지 않은 주민등록번호 입니다.");
+//			
+//		}
 	
-		Scanner scanner = new Scanner(System.in);
-		String regNo = scanner.nextLine();
-		char gender = regNo.charAt(7);
+		//switch 중첩 예제 4-11  ch4/FlowEx11 -> 20211022 시작
+//		System.out.println("당신의 주민번호를 입력하세요 > .(011231-1111222) > ");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		String regNo = scanner.nextLine();
+//		char gender = regNo.charAt(7); // 입력 받은 번호의 8 번쨰 문자를 gender에 저장
+//		
+//		switch(gender) {
+//		case '1' : case '3':
+//			switch(gender) {
+//			case '1':
+//				System.out.println("당신은 2000년 이전에 출생한 남자 입니다.");
+//				break;
+//			case '3' :
+//				System.out.println("당싱은 2000년 이후에 출생한 남자 입니다.");
+//			}
+//			break;
+//		case '2' : case '4':
+//			switch(gender) {
+//			case '2':
+//				System.out.println("당신은 2000년 이전에 출생한 여자 입니다.");
+//				break;
+//			case '4' :
+//				System.out.println("당싱은 2000년 이후에 출생한 여자 입니다.");
+//				break;
+//			}
+//			break;
+//		default :
+//		System.out.println("유효하지 않은 주민등록번호입니다.");
+//		
+//		
+//		}
+//	
 		
-		switch(gender){
-		case '1': case '3':
-			switch(gender) {
-			case '1':
-				System.out.println("당신은 2000년 이전에 출생한 남자 입니다.");
-				break;
-			case '3':
-				System.out.println("당신은 2000년 이후에 출생한 남자 입니다.");
-				break;
-			}
-			break; // 뺴지 않도록 주의
-		case '2': case '4':
-			switch(gender) {
-			case '2':
-				System.out.println("당신은 2000년 이전에 출생한 여자 입니다.");
-				break;
-			case '4':
-				System.out.println("당신은 2000년 이후에 출생한 여자 입니다.");
-				break;
-			}
-			break;
-		default:
-			System.out.println("유효하지 않은 주민등록번호 입니다.");
+		// 예제 4-12  ch4/FlowEx12 : 반복문 for,while do-while
+//			for(int i=1; i<=5 ; i++) 
+//				System.out.println(i);// i의 값을 출력한다.
+//			
+//			for(int i = 1; i <=5;i++) 
+//				System.out.print(i); // print() 쓰면 가로로 출력 한다.
+//				
+//			System.out.println();
+				
 			
-		}
-	
-	
+		
+		// 예제 4-13  ch4/FlowEx13
+//		int sum = 0; // 합계를 저장하기위한 변수
+//		
+//		for(int i = 1; i <10; i++) {
+//			sum += i; // sum = sum + i 
+//			System.out.printf("1 부터 %2d 까지의 합 : %2d%n", i , sum);
+//		}	
+//		
+		// 예제 4-14  ch4/FlowEx14
+//			for(int i=1, j = 10; i <= 10 ; i++ , j--) {
+//				System.out.printf("%d \t %d%n", i,j);
+//			}
+		
+		// 예제 4-15  ch4/FlowEx15
+//		System.out.println("i \t 2*i \t 2*i-1 \t i*i \t 11-i \t i%3 \t i/3");
+//		System.out.println("--------------------------------------------------------");
+//		
+//		for( int i = 1 ; i<=10; i++)
+//			System.out.printf("%d \t %d \t %d \t %d \t %d \t %d%n" ,2*i ,2*i-1 , i*i ,11-i, i%3 ,i/3);
+//		
+		// 예제 4-16  ch4/FlowEx16 : 중첩 for문 
+//		for(int i = 1 ; i <= 5; i++) {
+//			for(int j = 1 ; j<= i ; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+//		*
+//		**
+//		***
+//		****
+//		*****
+
+		// 예제 4-17  ch4/FlowEx17
+		int num = 0;
+//		System.out.print("*을 출력할 라인의 수를 입력하세요.> ");
+//		
+//		Scanner scanner = new Scanner(System.in); // 화면을 통해 입력 받은 내용을 tmp에 저장
+//		String tmp = scanner.nextLine(); // 입력받은 문자열 (tmp)을 숫자로 변환
+//		num = Integer.parseInt(tmp);
+//		
+//		for(int i = 0; i < num; i++) {
+//			for(int j =0 ; j <= i ; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+//		
+//		*을 출력할 라인의 수를 입력하세요.> 5
+//		*
+//		**
+//		***
+//		****
+//		*****
+//
+		
+//		// 예제 4-18  ch4/FlowEx18
+//		for( int i =2 ; i<=9 ; i++) {
+//			for(int j =1; j<=9; j++) {
+//				System.out.printf("%d x %d = %d%n" , i, j, i*j);
+//			}
+//		}
+//		// 예제 4-19  ch4/FlowEx19
+//		for(int i = 1; i <=3; i++) {
+//			for(int j =1 ; j<=3 ; j++) {
+//				for(int k = 1; k<=3; k++) {
+//					System.out.println(""+i+j+k);
+//				}
+//			}
+//		}
+//		
+//		// 예제 4-20  ch4/FlowEx20
+//		for(int i = 1; i <=5 ; i++) {
+//			for(int j=1; j<=5; j++) {
+//				System.out.printf("[%d,%d]",i,j);
+//			}
+//			System.out.println();
+//		}
+//		[1,1][1,2][1,3][1,4][1,5]
+//		[2,1][2,2][2,3][2,4][2,5]
+//		[3,1][3,2][3,3][3,4][3,5]
+//		[4,1][4,2][4,3][4,4][4,5]
+//		[5,1][5,2][5,3][5,4][5,5]
+
+		// 예제 4-21  ch4/FlowEx21
 	
 	
 	
