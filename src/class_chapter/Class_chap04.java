@@ -323,7 +323,7 @@ public class Class_chap04 {
 //		*****
 
 		// 예제 4-17  ch4/FlowEx17
-		int num = 0;
+//		int num = 0;
 //		System.out.print("*을 출력할 라인의 수를 입력하세요.> ");
 //		
 //		Scanner scanner = new Scanner(System.in); // 화면을 통해 입력 받은 내용을 tmp에 저장
@@ -374,12 +374,22 @@ public class Class_chap04 {
 //		[5,1][5,2][5,3][5,4][5,5]
 
 		// 예제 4-21  ch4/FlowEx21
+		for(int i = 1; i <=5 ; i++) {
+			
+			for(int j = 1; j<=5;j++) {
+				if(i==j) {
+					System.out.printf("[%d,%d]" , i , j);
+				}else {
+					System.out.printf("%5c", ' ');
+				}
+			}
+			System.out.println();
+		} 
 	
 	
 	
 	
 	
-	
-	}
+	}// main 
 
-}
+}//class 끝
