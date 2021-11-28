@@ -374,20 +374,85 @@ public class Class_chap04 {
 //		[5,1][5,2][5,3][5,4][5,5]
 
 		// 예제 4-21  ch4/FlowEx21
-		for(int i = 1; i <=5 ; i++) {
+//		for(int i = 1; i <=5 ; i++) {
+//			
+//			for(int j = 1; j<=5;j++) {
+//				if(i==j) {
+//					System.out.printf("[%d,%d]" , i , j);
+//				}else {
+//					System.out.printf("%5c", ' ');
+//				}
+//			}
+//			System.out.println();
+//		} 
+//	
+//	
+
+		// 예제 4-22  ch4/FlowEx22 : 향상된 for 문
+		// int[] arr = {10,20,30,40,50};
+		// for( 타입 변수명 : 배열 또는 컬렉션 ) {
+		// // 반복할 문장
+		//} 향상된 for 문 작성
+		
+		//일반문
+		
+//		for(int i = 0 ; i < arr.length ; i++) {
+//			System.out.println(arr[i]);
+//		}
+		
+		// 향상된 for 문
+//		for(int tmp : arr ) {
+//			System.out.println(tmp);
+//		}
+		// 배열이나 컬렉션에 저장되 요소들을 읽어오는 용도로만 사용 가능 => 제약이 있음
+		
+		int[] arr = {10,20,30,40,50};
+		int sum = 0;
+		int sum1= 0;
+		
+		for(int i = 0 ; i < arr.length ; i++) {
+			System.out.printf("%d ", arr[i]);
 			
-			for(int j = 1; j<=5;j++) {
-				if(i==j) {
-					System.out.printf("[%d,%d]" , i , j);
-				}else {
-					System.out.printf("%5c", ' ');
-				}
-			}
-			System.out.println();
-		} 
-	
-	
-	
+			sum += arr[i];
+			System.out.println(sum);
+		}
+		System.out.println(); 
+		
+		for(int tmp : arr ) {
+			System.out.printf("%d " , tmp);
+			
+			sum1 += tmp ;
+		}
+		System.out.println();
+		 System.out.println("sum="+sum1);
+		 
+		// 예제 4-23  ch4/FlowEx23
+		// 예제 4-24  ch4/FlowEx24
+		// 예제 4-25  ch4/FlowEx25
+		// 예제 4-26  ch4/FlowEx26
+		// 예제 4-27  ch4/FlowEx27
+		// 예제 4-28  ch4/FlowEx28
+		// 예제 4-29  ch4/FlowEx29
+		// 예제 4-30  ch4/FlowEx30
+		// 예제 4-31  ch4/FlowEx31
+		// 예제 4-32  ch4/FlowEx32
+		// 예제 4-33  ch4/FlowEx33
+		// 예제 4-34  ch4/FlowEx34
+		// 예제 4-35  ch4/FlowEx35
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
 	
 	}// main 
